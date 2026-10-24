@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mof-screen"
+version = "1.0.0"
+description = "MOF K+ anode DFT screening toolkit"
+requires-python = ">=3.9"
+dependencies = [
+    "ase",
+    "numpy",
+]
+
+[project.scripts]
+mof-screen = "mof_screen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mof_screen*"]

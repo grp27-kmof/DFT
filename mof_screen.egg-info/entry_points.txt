@@ -1,0 +1,2 @@
+[console_scripts]
+mof-screen = mof_screen.cli:main
